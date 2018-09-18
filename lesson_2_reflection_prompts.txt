@@ -42,7 +42,7 @@ git add  |    Add a file to the staging area
 git commit  |    Commit the files from the staging area to the repository 
 git status  |    Show which files are in the staging area, and which files from the working directory are not part of the repository    
 git diff  |    Git diff without arguments is comparing the working directory with the staging area
-git diff --staged  |    Compare the staging area with the repository
+git diff --staged  |    Compare the staging area with the repository(recent commit)
 git reset --hard  |    Undo all changes! There is no rollback for this, so be carefull!
 git checkout master  |    Restore the "Head" to the latest check-in (this will be part of a later lesson/module)
 git log --graph --oneline <branch1> <branch2>  |    Show a visual representation of the commit history within different branches
@@ -50,3 +50,36 @@ git checkout -b new_branch_name  |    Creates a new branch and do a checkout on 
 git merge branch1 branch2  |    Merge two branches, branch2 get merged into branch1
 git branch -d name  |    Remove the branch with the specified name
 git show commitId  |    Show the changes made in this commit compared to the previous version. This is working even after merging.
+git commit -a -m "" stage +merge
+git branch --merged to check what are merged and we can del
+git log --all --decorate --oneline --grapgh
+
+Right now, your HEAD should still be 'detached' from Lesson 1 when you checked out an old commit. To fix that, run the command git checkout master. You'll learn more about what this command does later this lesson.
+
+Three Areas: Working dir--staging area--Repo
+
+
+comparing dev barnch AND master branch 	with base branch,
+
+no change and change[comapring to base] --->chnage wins    man_ip in master
+
+both change same lines results in conflict
+
+change is made and the line is deleted ---conflict
+
+if we try to merge we get conflict  errorplease fix
+git merge --abort to abort merge
+else open the file
+
+===== seperates 2 versions >>>>>head[master] nd <<<<<dev
+
+feter making necesaary changes git add s1; git commit
+]
+git stash [list/apply/pop] [label
+you cannot move or merage to another branch inless u commit changed
+stash helps save temp and then u can apply perm changes
+
+
+
+
+
